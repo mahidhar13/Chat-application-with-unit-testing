@@ -15,8 +15,6 @@ export class ContactsComponent implements OnInit {
   constructor(private store: Store<{chats: Messages}>) { }
 
   ngOnInit(): void {
-    // this.messages = this.activatedRoute.snapshot.data.messages;
-    // console.log('I m in contacts component', this.messages);
     this.contacts$ = this.store.select('chats');
   }
 }

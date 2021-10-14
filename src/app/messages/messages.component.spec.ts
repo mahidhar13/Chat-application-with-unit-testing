@@ -109,12 +109,6 @@ describe('MessagesComponent', () => {
       expect(component.urlMessages).toBe(storeValue);
       });
 
-    // it('should fetch all messages from input box in messages component', () => {
-    //   component.ngOnInit();
-    //   store.select.and.returnValue(of(mockContacts));
-    //   component.ngOnInit();
-    //   expect(component.newMessages).toBeTruthy();
-    //   })
     });
 
 

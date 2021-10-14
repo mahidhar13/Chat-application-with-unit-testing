@@ -1,0 +1,18 @@
+<p><b>ID: </b>{{id}} </p>
+
+<form [formGroup]="sendMessagesForm">
+  <input type = "text" formControlName = 'messageInput' />
+  <button (click) = "sendMessage()">Send Message</button>
+</form>
+
+<div *ngFor="let item of urlMessages">
+  <div *ngIf="item.id == id">
+    <p><b>Url message is </b>{{ item.content }}</p>
+  </div>
+</div>
+
+<div *ngFor="let newMessage of newStoreMessage">
+  <div *ngIf="newMessage.id == id">
+    <p>Entered message is {{newMessage.content}}</p>
+  </div>
+</div>

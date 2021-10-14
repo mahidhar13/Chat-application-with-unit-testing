@@ -1,0 +1,5 @@
+<ul style="display : flex" *ngFor="let contact of contacts$ | async">
+  <img class ="profileImage" src = {{contact?.sender?.profileImage}} />
+  <div><a routerLink="/messages/{{contact.id}}">
+      {{contact?.sender?.name}} </a></div>
+</ul>
